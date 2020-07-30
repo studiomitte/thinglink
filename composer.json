@@ -1,0 +1,38 @@
+{
+  "name": "studiomitte/thinglink",
+  "keywords": [
+    "TYPO3",
+    "extension",
+    "rich media",
+    "thinglink"
+  ],
+  "authors": [
+    {
+      "name": "Georg Ringer",
+      "role": "Developer",
+      "homepage": "https://studiomitte.com"
+    }
+  ],
+  "type": "typo3-cms-extension",
+  "description": "Embed media from thinglink",
+  "homepage": "https://studiomitte.com",
+  "license": [
+    "GPL-2.0-or-later"
+  ],
+  "require": {
+    "typo3/cms-core": "^9 || ^10"
+  },
+  "autoload": {
+    "psr-4": {
+      "StudioMitte\\Thinglink\\": "Classes"
+    }
+  },
+  "replace": {
+    "typo3-ter/thinglink": "self.version"
+  },
+  "extra": {
+    "typo3/cms": {
+      "extension-key": "thinglink"
+    }
+  }
+}
