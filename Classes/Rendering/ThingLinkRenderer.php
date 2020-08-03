@@ -62,7 +62,10 @@ class ThingLinkRenderer implements FileRendererInterface
 
     protected function modifyHtml(string $html): string
     {
-        return str_replace(['<iframe '], ['<iframe class="thinglink" '], $html);
+        $html = str_replace(['<iframe '], ['<iframe class="thinglink" '], $html);
+        $html .= '<script async src="//cdn.thinglink.me/jse/responsive.js"></script>';
+
+        return $html;
     }
 
     protected function getOEmbedUrl($mediaId)
