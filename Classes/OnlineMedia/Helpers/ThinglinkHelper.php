@@ -1,6 +1,6 @@
 <?php
 
-namespace StudioMitte\Thinglink\Helpers;
+namespace StudioMitte\Thinglink\OnlineMedia\Helpers;
 
 use StudioMitte\Thinglink\Utility\MetaTagUtility;
 use TYPO3\CMS\Core\Resource\File;
